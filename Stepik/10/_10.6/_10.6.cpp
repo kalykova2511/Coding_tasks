@@ -1,19 +1,16 @@
 ﻿#include <iostream>
 #include <string>
 
-using namespace std;
-
 int main() {
-    string word;
-    string longest_word;
+    std::string longest_word, current_word;
 
-    while (cin >> word) {
-        if (longest_word.empty() || word.size() > longest_word.size()) {
-            longest_word = word;
+    while (std::cin) {
+        std::cin >> current_word;
+        if (current_word.length() > longest_word.length()) {
+            longest_word = now_word;
         }
     }
 
-    cout << longest_word;
-
+    std::cout << longest_word;
     return 0;
 }
